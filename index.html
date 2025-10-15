@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Donation Portal</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blood Donation Portal</h1>
+    <nav>
+      <button onclick="showForm('donor')">Become a Donor</button>
+      <button onclick="showForm('request')">Request Blood</button>
+    </nav>
+  </header>
+  <main>
+    <section id="donor-form" class="form-section hidden">
+      <h2>Donor Registration</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="text" placeholder="Blood Type" required />
+        <input type="text" placeholder="Location" required />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <section id="request-form" class="form-section hidden">
+      <h2>Blood Request</h2>
+      <form>
+        <input type="text" placeholder="Hospital Name" required />
+        <input type="text" placeholder="Required Blood Type" required />
+        <input type="text" placeholder="Location" required />
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
